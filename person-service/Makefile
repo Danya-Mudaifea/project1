@@ -1,12 +1,13 @@
 build:
-	docker build -t person-service .
+        docker build -t person-service .
 run:
-	docker run -it -p 8081:80 --name person-con person-service
+        docker run -it -p 8081:80 --name person-con person-service
 logs:
-	docker logs person-service 
+        docker logs person-service 
 follow:
-	docker logs -f person-service 
+        docker logs -f person-service 
 stop: 
-	docker stop person-service 
+        docker stop person-service 
 clean: 
-	docker rmi -f  person-service
+        docker rmi -f  person-service
+
